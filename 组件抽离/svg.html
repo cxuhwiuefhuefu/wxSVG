@@ -1,0 +1,14 @@
+<!-- 闪烁 -->
+<animate attributeName="opacity" calcMode="spline"
+    keySplines="0.42 0 0.58 1.0; 0.42 0 0.58 1.0; 0.42 0 0.58 1.0; 0.42 0 0.58 1.0" values="0;1;0;1;0" begin="0"
+    dur="2s" repeatCount="indefinite"></animate>
+
+
+<!-- 点击消失 -->
+<set attributeName="visibility" data-txscript="hc" from="visible" to="hidden" begin="click">
+</set>
+
+
+<!-- 向左移动 -->
+<animateTransform attributeName="transform" data-txscript="ch" type="translate" values="0 0;-500 0" begin="click"
+    dur="1s" fill="freeze" restart="never" additive="sum"></animateTransform>
